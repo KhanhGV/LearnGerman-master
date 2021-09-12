@@ -1,0 +1,11 @@
+﻿@using DE_DB_ELEANING.AFModel;
+@model Template
+@if (ViewBag.en == "vi")
+{
+    @Html.Raw(Model.NoteVi);
+}
+else
+if (ViewBag.en == "de")
+{
+    @Html.Raw(Model.NoteDe);
+}
